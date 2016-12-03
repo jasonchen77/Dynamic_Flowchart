@@ -2,122 +2,141 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link href = "flowchart.css" rel = "stylesheet">
 	<title>Dynamic Flowchart</title>
 	<script language="JavaScript">
-
 
 	</script>
 </head>
 <body>
-<center><h4>Dynamic Flowchart</h4></center>
-<button type="button" onclick="myFunction()">Try it</button>
+<center><h1>Dynamic Flowchart</h1></center>
 
+<!--cs 352 canvas-->
 
-<!--CS 302-->
+<DIV style="position: absolute; top:600px; left:600px; width:600px; height:200px">
+	<canvas id="Canvas 352" width="600" height="200">
+	</canvas>
 </DIV>
+<!--cs 354 canvas-->
+<DIV style="position: absolute; top:600px; left:600px; width:100px; height:200px">
+	<canvas id="Canvas 354" width="200" height="200">
+	</canvas>
+</DIV>
+
+
+<!--cs 367 canvas-->
+<DIV style="position: absolute; top:600px; left:200px; width:100px; height:200px">
+	<canvas id="Canvas 367" width="200" height="200">
+	</canvas>
+</DIV>
+
+
+<!--cs 552 canvas-->
+<DIV style="position: absolute; top:1000px; left:200px; width:1000px; height:200px">
+	<canvas id="Canvas 552" width="1000" height="200">
+	</canvas>
+</DIV>
+
+<!--cs 537 canvas-->
+<DIV style="position: absolute; top:1000px; left:200px; width:1000px; height:200px">
+	<canvas id="Canvas 537" width="1000" height="200">
+	</canvas>
+</DIV>
+
+<!--cs 536 canvas-->
+<DIV style="position: absolute; top:1000px; left:200px; width:600px; height:200px">
+	<canvas id="Canvas 536" width="600" height="200">
+	</canvas>
+</DIV>
+
+
+<!--cs 577 canvas-->
+<DIV style="position: absolute; top:600px; left:200px; width:1400px; height:600px">
+	<canvas id="Canvas 577" width="1400" height="600">
+	</canvas>
+</DIV>
+
+
+<!--cs 302-->
 <DIV style="position: absolute; top:400px; left:200px; width:200px; height:200px">
 	<a href="#" onMouseOver="return changeImage302()" onMouseOut= "return changeImageBack302()" ><img
-			name="cs 302" src="CS302g.jpg" width="110" height="100" border="0"
+			name="cs 302" src="CS302g.jpg" width="200" height="100" border="0"
 			alt="javascript button"></a>
-	<center>3 cr</center>
+	<h2><center>3 cr</center></h2>
 </DIV>
 
-
 <!--cs252-->
-<DIV style="position: absolute; top:400px; left:400px; width:200px; height:200px">
+<DIV style="position: absolute; top:400px; left:600px; width:200px; height:200px">
 	<a href="#" onMouseOver="return changeImage252()" onMouseOut= "return changeImageBack252()" ><img
-			name="cs 252" src="CS252g.jpg" width="110" height="100" border="0"
+			name="cs 252" src="CS252g.jpg" width="200" height="100" border="0"
 			alt="javascript button"></a>
 	<center>2 cr</center>
 </DIV>
 <!--cs 354-->
-<DIV style="position: absolute; top:190px; left:800px; width:110px; height:110px">
-	<canvas id="Canvas 354" width="200" height="190">
-	</canvas>
-</DIV>
-<DIV style="position: absolute; top:800px; left:400px; width:200px; height:200px">
+
+<DIV style="position: absolute; top:800px; left:600px; width:200px; height:200px">
 	<a href="#" onMouseOver="return changeImage354()" onMouseOut= "return changeImageBack354()" ><img
-			name="cs 354" src="CS354g.jpg" width="110" height="100" border="0"
+			name="cs 354" src="CS354g.jpg" width="200" height="100" border="0"
 			alt="javascript button"></a>
 	<center>3 cr</center>
 </DIV>
 <!--cs 367-->
-<DIV style="position: absolute; top:190px; left:400px; width:110px; height:110px">
-	<canvas id="Canvas 367" width="200" height="190">
-	</canvas>
-</DIV>
+
 <DIV style="position: absolute; top:800px; left:200px; width:200px; height:200px">
 	<a href="#" onMouseOver="return changeImage367()" onMouseOut= "return changeImageBack367()" ><img
-			name="cs 367" src="CS367g.jpg" width="110" height="100" border="0"
+			name="cs 367" src="CS367g.jpg" width="200" height="100" border="0"
 			alt="javascript button"></a>
 	<center>3 cr</center>
 </DIV>
 <!--cs 352-->
-<DIV style="position: absolute; top:190px; left:400px; width:110px; height:110px">
-	<canvas id="Canvas 352" width="200" height="190">
-	</canvas>
-</DIV>
-<DIV style="position: absolute; top:800px; left:600px; width:110px; height:110px">
+
+<DIV style="position: absolute; top:800px; left:1000px; width:200px; height:200px">
 	<a href="#" onMouseOver="return changeImage352()" onMouseOut= "return changeImageBack352()" ><img
-			name="cs 352" src="CS352g.jpg" width="110" height="100" border="0"
+			name="cs 352" src="CS352g.jpg" width="200" height="100" border="0"
 			alt="javascript button"></a>
 	<center>3 cr</center>
 </DIV>
 <!--cs 537-->
-<DIV style="position: absolute; top:190px; left:400px; width:110px; height:110px">
-	<canvas id="Canvas 537" width="200" height="190">
-	</canvas>
-</DIV>
+
 <DIV style="position: absolute; top:1200px; left:200px; width:200px; height:200px">
 	<a href="#" onMouseOver="return changeImage537()" onMouseOut= "return changeImageBack537()" ><img
-			name="cs 537" src="CS537g.jpg" width="110" height="100" border="0"
+			name="cs 537" src="CS537g.jpg" width="200" height="100" border="0"
 			alt="javascript button"></a>
 	<center>4 cr</center>
 </DIV>
 <!--cs 536-->
-<DIV style="position: absolute; top:190px; left:400px; width:110px; height:110px">
-	<canvas id="Canvas 536" width="200" height="190">
-	</canvas>
-</DIV>
-<DIV style="position: absolute; top:1200px; left:400px; width:200px; height:200px">
+
+<DIV style="position: absolute; top:1200px; left:600px; width:200px; height:200px">
 	<a href="#" onMouseOver="return changeImage536()" onMouseOut= "return changeImageBack536()" ><img
-			name="cs 536" src="CS536g.jpg" width="110" height="100" border="0"
+			name="cs 536" src="CS536g.jpg" width="200" height="100" border="0"
 			alt="javascript button"></a>
 	<center>3 cr</center>
 </DIV>
 <!--cs 552-->
-<DIV style="position: absolute; top:190px; left:400px; width:110px; height:110px">
-	<canvas id="Canvas 552" width="200" height="190">
-	</canvas>
-</DIV>
-<DIV style="position: absolute; top:1200px; left:600px; width:200px; height:200px">
+
+<DIV style="position: absolute; top:1200px; left:1000px; width:200px; height:200px">
 	<a href="#" onMouseOver="return changeImage552()" onMouseOut= "return changeImageBack552()" ><img
-			name="cs 552" src="CS552g.jpg" width="110" height="100" border="0"
+			name="cs 552" src="CS552g.jpg" width="200" height="100" border="0"
 			alt="javascript button"></a>
 	<center>3 cr</center>
 </DIV>
 <!--cs 240-->
-<DIV style="position: absolute; top:190px; left:400px; width:110px; height:110px">
-	<canvas id="Canvas 240" width="200" height="190">
-	</canvas>
-</DIV>
-<DIV style="position: absolute; top:400px; left:800px; width:200px; height:200px">
+
+<DIV style="position: absolute; top:400px; left:1400px; width:200px; height:200px">
 	<a href="#" onMouseOver="return changeImage240()" onMouseOut= "return changeImageBack240()" ><img
-			name="cs 240" src="CS240g.jpg" width="110" height="100" border="0"
+			name="cs 240" src="CS240g.jpg" width="200" height="100" border="0"
 			alt="javascript button"></a>
 	<center>3 cr</center>
 </DIV>
 <!--cs 577-->
-<DIV style="position: absolute; top:190px; left:400px; width:110px; height:110px">
-	<canvas id="Canvas 577" width="200" height="190">
-	</canvas>
-</DIV>
-<DIV style="position: absolute; top:1200px; left:800px; width:200px; height:200px">
+
+<DIV style="position: absolute; top:1200px; left:1400px; width:200px; height:200px">
 	<a href="#" onMouseOver="return changeImage577()" onMouseOut= "return changeImageBack577()" ><img
-			name="cs 577" src="CS577g.jpg" width="110" height="100" border="0"
+			name="cs 577" src="CS577g.jpg" width="200" height="100" border="0"
 			alt="javascript button"></a>
 	<center>3 cr</center>
 </DIV>
+
 
 <script>
     var myimgobj = document.images["cs 367"];
@@ -126,84 +145,217 @@
         this.prereq = prereq;
         this.lecturer = lecturer;
     }
+    var c = 1;
+    function changeImage352()
+    {
+        document.images["cs 352"].src= "CS352b.jpg";
+        var c = document.getElementById("Canvas 352");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(100,0);
+        ctx.lineTo(100,100);
+        ctx.lineTo(500,100);
+        ctx.lineTo(500,200);
+        ctx.strokeStyle = '#ff0000';
+        ctx.stroke();
+        changeImage252();
+        return true;
+    }
+    function changeImageBack352()
+    {
+        document.images["cs 352"].src= "CS352g.jpg";
+        var c = document.getElementById("Canvas 352");
+        var ctx = c.getContext("2d");
+        ctx.clearRect(0, 0, c.width, c.height);
+        changeImageBack252();
+        return true;
+    }
+    function changeImage240()
+    {
+        document.images["cs 240"].src= "CS240b.jpg";
 
+        return true;
+    }
+    function changeImageBack240()
+    {
+        document.images["cs 240"].src= "CS240g.jpg";
+
+        return true;
+    }
+    function changeImage577()
+    {
+        document.images["cs 577"].src= "CS577b.jpg";
+        var c = document.getElementById("Canvas 577");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(1300,0);
+        ctx.lineTo(1300,600);
+        ctx.moveTo(100, 400);
+        ctx.lineTo(100, 500);
+        ctx.lineTo(1300,500);
+        ctx.strokeStyle = '#ff0000';
+        ctx.stroke();
+        changeImage367();
+        changeImage240();
+
+        return true;
+    }
+    function changeImageBack577()
+    {
+        document.images["cs 577"].src= "CS577g.jpg";
+        var c = document.getElementById("Canvas 577");
+        var ctx = c.getContext("2d");
+        ctx.clearRect(0, 0, c.width, c.height);
+        changeImageBack367();
+        changeImageBack240();
+        return true;
+    }
+    function changeImage552()
+    {
+        document.images["cs 552"].src= "CS552b.jpg";
+        var c = document.getElementById("Canvas 552");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(900,0);
+        ctx.lineTo(900,200);
+        ctx.moveTo(900,100);
+        ctx.lineTo(100,100);
+        ctx.lineTo(100,0);
+        ctx.strokeStyle = '#ff0000';
+        ctx.stroke();
+        changeImage367();
+        changeImage352();
+        return true;
+    }
+    function changeImageBack552()
+    {
+        document.images["cs 552"].src= "CS552g.jpg";
+        var c = document.getElementById("Canvas 552");
+        var ctx = c.getContext("2d");
+        ctx.clearRect(0, 0, c.width, c.height);
+        changeImageBack367();
+        changeImageBack352();
+        return true;
+    }
+    function changeImage536()
+    {
+        document.images["cs 536"].src= "CS536b.jpg";
+        var c = document.getElementById("Canvas 536");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(500,0);
+        ctx.lineTo(500,200);
+        ctx.moveTo(500,100);
+        ctx.lineTo(100,100);
+        ctx.lineTo(100,0);
+        ctx.strokeStyle = '#ff0000';
+        ctx.stroke();
+        changeImage367();
+        changeImage354();
+
+        return true;
+    }
+    function changeImageBack536()
+    {
+        document.images["cs 536"].src= "CS536g.jpg";
+        var c = document.getElementById("Canvas 536");
+        var ctx = c.getContext("2d");
+        ctx.clearRect(0, 0, c.width, c.height);
+        changeImageBack367();
+        changeImageBack354();
+        return true;
+    }
+    function changeImage537()
+    {
+        document.images["cs 537"].src= "CS537b.jpg";
+        var c = document.getElementById("Canvas 537");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(100,0);
+        ctx.lineTo(100,200);
+        ctx.moveTo(100,100);
+        ctx.lineTo(500,100);
+        ctx.lineTo(500,0);
+        ctx.strokeStyle = '#ff0000';
+        ctx.stroke();
+        changeImage367();
+        changeImage354();
+
+        return true;
+    }
+    function changeImageBack537()
+    {
+        document.images["cs 537"].src= "CS537g.jpg";
+        var c = document.getElementById("Canvas 537");
+        var ctx = c.getContext("2d");
+        ctx.clearRect(0, 0, c.width, c.height);
+
+        changeImageBack367();
+        changeImageBack354();
+        return true;
+    }
 
     function changeImage367()
     {
-        document.images["cs 367"].src= "http://youthvillage.co.za/wp-content/uploads/2013/11/antoine_dodson_dumb_and_dumber-14243.jpg";
+        document.images["cs 367"].src= "CS367b.jpg";
         var c = document.getElementById("Canvas 367");
         var ctx = c.getContext("2d");
-        ctx.moveTo(55,0);
-        ctx.lineTo(55,190);
+        ctx.moveTo(100,0);
+        ctx.lineTo(100,200);
         ctx.strokeStyle = '#ff0000';
         ctx.stroke();
         changeImage302();
-
 
         return true;
     }
     function changeImageBack367()
     {
-        document.images["cs 367"].src = "http://images.slideplayer.com/33/10125079/slides/slide_1.jpg";
+        document.images["cs 367"].src = "CS367g.jpg";
         var c = document.getElementById("Canvas 367");
         var ctx = c.getContext("2d");
-        ctx.moveTo(55,0);
-        ctx.lineTo(55,190);
-        ctx.strokeStyle = '#000000';
-        ctx.stroke();
+        ctx.clearRect(0, 0, c.width, c.height);
+
         changeImageBack302();
         return true;
     }
     function changeImage354()
     {
-        document.images["cs 354"].src= "http://youthvillage.co.za/wp-content/uploads/2013/11/antoine_dodson_dumb_and_dumber-14243.jpg";
+        document.images["cs 354"].src= "CS354b.jpg";
         var c = document.getElementById("Canvas 354");
         var ctx = c.getContext("2d");
-        ctx.moveTo(55,0);
-        ctx.lineTo(55,190);
+        ctx.moveTo(100,0);
+        ctx.lineTo(100,200);
         ctx.strokeStyle = '#ff0000';
         ctx.stroke();
         changeImage252();
-
 
         return true;
     }
     function changeImageBack354()
     {
-        document.images["cs 354"].src = "http://images.slideplayer.com/33/10125079/slides/slide_1.jpg";
+        document.images["cs 354"].src = "CS354g.jpg";
         var c = document.getElementById("Canvas 354");
         var ctx = c.getContext("2d");
-        ctx.moveTo(55,0);
-        ctx.lineTo(55,190);
-        ctx.strokeStyle = '#000000';
-        ctx.stroke();
+        ctx.clearRect(0, 0, c.width, c.height);
+
         changeImageBack252();
         return true;
     }
     function changeImage302()
     {
-        document.images["cs 302"].src= "http://youthvillage.co.za/wp-content/uploads/2013/11/antoine_dodson_dumb_and_dumber-14243.jpg";
+        document.images["cs 302"].src= "CS302b.jpg";
         return true;
     }
     function changeImageBack302()
     {
-        document.images["cs 302"].src = "https://i.imgflip.com/gjxdq.jpg";
+        document.images["cs 302"].src = "CS302g.jpg";
         return true;
     }
     function changeImage252()
     {
-        document.images["cs 252"].src= "http://youthvillage.co.za/wp-content/uploads/2013/11/antoine_dodson_dumb_and_dumber-14243.jpg";
+        document.images["cs 252"].src= "CS252b.jpg";
         return true;
     }
     function changeImageBack252()
     {
-        document.images["cs 252"].src = "https://i.imgflip.com/gjxdq.jpg";
+        document.images["cs 252"].src = "CS252g.jpg";
         return true;
     }
 </script>
 </body>
 </html>
-
-
-
-
