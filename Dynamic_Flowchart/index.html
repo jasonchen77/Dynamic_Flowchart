@@ -70,6 +70,10 @@
 	</canvas>
 </DIV>
 
+<!-- info canvas-->
+<DIV style="position: absolute; top:600px; left:1800px; width:2000px; height:200px">
+	<h3 id="showInfo" color=#FFFFFF></h3>
+</DIV>
 
 <!--cs 302-->
 <DIV style="position: absolute; top:400px; left:200px; width:200px; height:200px">
@@ -189,6 +193,8 @@
         ctx.strokeStyle = '#ff0000';
         ctx.stroke();
         changeImage252();
+        document.getElementById("showInfo").innerHTML = "";
+
         return true;
 
     }
@@ -210,7 +216,9 @@
         ctx.lineTo(100,100);
         ctx.strokeStyle = '#ff0000';
         ctx.stroke();
-		changeImage221();
+        changeImage221();
+        document.getElementById("showInfo").innerHTML = "Basic concepts of mathematics (definitions, proofs, sets, functions, and relations) with a focus on discrete structures: integers, bits, strings, trees, and graphs. Propositional logic, Boolean algebra, and predicate logic. Mathematical induction and recursion. Invariants and algorithmic correctness. Recurrences and asymptotic growth analysis. Fundamentals of counting. Prereq: Math 221.";
+
         return true;
     }
     function changeImageBack240()
@@ -219,7 +227,7 @@
         var c = document.getElementById("Canvas 240");
         var ctx = c.getContext("2d");
         ctx.clearRect(0, 0, c.width, c.height);
-		changeImageBack221();
+        changeImageBack221();
         return true;
     }
     function changeImage577()
@@ -236,7 +244,7 @@
         ctx.stroke();
         changeImage367();
         changeImage240();
-
+        document.getElementById("showInfo").innerHTML = "Basic paradigms for the design and analysis of efficient algorithms: greed, divide-and-conquer, dynamic programming, reductions, and the use of randomness. Computational intractability including typical NP-complete problems and ways to deal with them. Prereq: CS 240 and CS 367, or consent of instructor.";
         return true;
     }
     function changeImageBack577()
@@ -263,6 +271,8 @@
         ctx.stroke();
         changeImage367();
         changeImage352();
+        document.getElementById("showInfo").innerHTML = "The design of computer systems and components. Processor design, instruction set design, and addressing; control structures and microprogramming; memory management, caches, and memory hierarchies; interrupts and I/O structures. Prereq: ECE/CS 352 and CS/ECE 354; co-req: CS 367.";
+
         return true;
     }
     function changeImageBack552()
@@ -289,6 +299,7 @@
         ctx.stroke();
         changeImage367();
         changeImage354();
+        document.getElementById("showInfo").innerHTML = "Introduction to the theory and practice of compiler design. Comparison of features of several programming languages and their implications for implementation techniques. Several programming projects required. Prereq: CS 367 and either CS 354 or 552.";
 
         return true;
     }
@@ -316,6 +327,7 @@
         ctx.stroke();
         changeImage367();
         changeImage354();
+        document.getElementById("showInfo").innerHTML = "Input-output hardware, interrupt handling, properties of magnetic tapes, discs and drums, associative memories and virtual address translation techniques. Batch processing, time sharing and real-time systems, scheduling resource allocation, modular software systems, performance measurement and system evaluation. Prereq: CS 354 and CS 367.";
 
         return true;
     }
@@ -341,7 +353,7 @@
         ctx.strokeStyle = '#ff0000';
         ctx.stroke();
         changeImage302();
-
+        document.getElementById("showInfo").innerHTML = "Study of data structures (including stacks, queues, trees, graphs, and hash tables) and their applications. Development, implementation, and analysis of efficient data structures and algorithms (including sorting and searching). Experience in use of an object-oriented programming language. Prereq: CS 302 or consent of instructor. Students are strongly encouraged to take CS 367 within two semesters of having taken CS 302.";
         return true;
     }
     function changeImageBack367()
@@ -364,6 +376,7 @@
         ctx.strokeStyle = '#ff0000';
         ctx.stroke();
         changeImage252();
+        document.getElementById("showInfo").innerHTML = "An introduction to current system structures of control, communication, memories, processors and I-O devices. Projects involve detailed study and use of a specific small computer hardware and software system. Prereq: CS 302 and ECE/CS 252 or consent of instructor. Open to Fr.";
 
         return true;
     }
@@ -393,6 +406,7 @@
         ctx.stroke();
         changeImage537();
         changeImage552();
+        document.getElementById("showInfo").innerHTML = "";
 
         return true;
     }
@@ -410,6 +424,7 @@
     function changeImage221()
     {
         document.images["math 221"].src= "math221b.jpg";
+        document.getElementById("showInfo").innerHTML = "";
         return true;
     }
     function changeImageBack221()
@@ -421,6 +436,7 @@
     function changeImage302()
     {
         document.images["cs 302"].src= "CS302b.jpg";
+        document.getElementById("showInfo").innerHTML = "Instruction and experience in the use of an object-oriented programming language. Program design; development of good programming style; preparation for other Computer Science courses. Prereq: Problem solving skills such as those acquired in a statistics, logic, or advanced high school algebra course; or consent of instructor. Open to Fr.";
         return true;
     }
     function changeImageBack302()
@@ -431,6 +447,8 @@
     function changeImage252()
     {
         document.images["cs 252"].src= "CS252b.jpg";
+
+        document.getElementById("showInfo").innerHTML = "Logic components built with transistors, rudimentary Boolean algebra, basic combinational logic design, basic synchronous sequential logic design, basic computer organization and design, introductory machine-and assembly-language programming.";
         return true;
     }
     function changeImageBack252()
