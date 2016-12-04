@@ -7,7 +7,17 @@
 
 </head>
 <body>
-<center><h1>Dynamic Flowchart</h1></center>
+<h1>Dynamic Flowchart</h1>
+
+
+
+<!--cs 736 canvas-->
+<DIV style="position: absolute; top:1400px; left:200px; width:600px; height:200px">
+	<canvas id="Canvas 736" width="1400" height="600">
+	</canvas>
+</DIV>
+
+
 
 <!--cs 352 canvas-->
 
@@ -51,6 +61,12 @@
 <!--cs 577 canvas-->
 <DIV style="position: absolute; top:600px; left:200px; width:1400px; height:600px">
 	<canvas id="Canvas 577" width="1400" height="600">
+	</canvas>
+</DIV>
+
+<!--cs 240 canvas-->
+<DIV style="position: absolute; top:300px; left:1400px; width:200px; height:100px">
+	<canvas id="Canvas 240" width="200" height="100">
 	</canvas>
 </DIV>
 
@@ -135,6 +151,23 @@
 	<center>3 cr</center>
 </DIV>
 
+<!--cs 736-->
+
+<DIV style="position: absolute; top:1600px; left:200px; width:200px; height:200px">
+	<a href="#" onMouseOver="return changeImage736()" onMouseOut= "return changeImageBack736()" ><img
+			name="cs 736" src="CS736g.jpg" width="200" height="100" border="0"
+			alt="javascript button"></a>
+	<center>3 cr</center>
+</DIV>
+
+<!--math 221-->
+
+<DIV style="position: absolute; top:100px; left:1400px; width:200px; height:200px">
+	<a href="#" onMouseOver="return changeImage221()" onMouseOut= "return changeImageBack221()" ><img
+			name="math 221" src="math221g.jpg" width="200" height="100" border="0"
+			alt="javascript button"></a>
+	<center>3 cr</center>
+</DIV>
 
 <script>
     var myimgobj = document.images["cs 367"];
@@ -171,13 +204,22 @@
     function changeImage240()
     {
         document.images["cs 240"].src= "CS240b.jpg";
-
+        var c = document.getElementById("Canvas 240");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(100,0);
+        ctx.lineTo(100,100);
+        ctx.strokeStyle = '#ff0000';
+        ctx.stroke();
+		changeImage221();
         return true;
     }
     function changeImageBack240()
     {
         document.images["cs 240"].src= "CS240g.jpg";
-
+        var c = document.getElementById("Canvas 240");
+        var ctx = c.getContext("2d");
+        ctx.clearRect(0, 0, c.width, c.height);
+		changeImageBack221();
         return true;
     }
     function changeImage577()
@@ -335,6 +377,47 @@
         changeImageBack252();
         return true;
     }
+
+
+    function changeImage736()
+    {
+        document.images["cs 736"].src= "CS736b.jpg";
+        var c = document.getElementById("Canvas 736");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(100,0);
+        ctx.lineTo(100,200);
+        ctx.moveTo(900,0);
+        ctx.lineTo(900,100);
+        ctx.lineTo(100,100);
+        ctx.strokeStyle = '#ff0000';
+        ctx.stroke();
+        changeImage537();
+        changeImage552();
+
+        return true;
+    }
+    function changeImageBack736()
+    {
+        document.images["cs 736"].src = "CS736g.jpg";
+        var c = document.getElementById("Canvas 736");
+        var ctx = c.getContext("2d");
+        ctx.clearRect(0, 0, c.width, c.height);
+        changeImageBack537();
+        changeImageBack552();
+        return true;
+    }
+
+    function changeImage221()
+    {
+        document.images["math 221"].src= "math221b.jpg";
+        return true;
+    }
+    function changeImageBack221()
+    {
+        document.images["math 221"].src = "math221g.jpg";
+        return true;
+    }
+
     function changeImage302()
     {
         document.images["cs 302"].src= "CS302b.jpg";
